@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body {
+  font-family: 'Playfair Display', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#addBook {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+#grid {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#grid .book-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10px;
+}
+
+#grid .book-input .input-label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 20px;
+}
+
+#grid .book-input .input {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: auto 0 auto auto;
+}
+
+#grid .book-input .input input {
+  padding: 3px;
+  width: 320px;
+}
+
+#grid .book-input .input textarea {
+  width: 325px;
+}
+
+#grid .submit-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#grid .submit-button input {
+  margin-top: 16px;
+  padding: 6px 24px 6px 24px;
+  font-size: 16px;
+}
+
+.validationError {
+    color: red;
+}
+/*# sourceMappingURL=styles.css.map */
