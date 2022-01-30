@@ -2,6 +2,7 @@ package pl.bookshop;
 
 import lombok.*;
 import org.hibernate.Hibernate;
+import org.springframework.data.jpa.repository.Modifying;
 
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;

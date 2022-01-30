@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookShop Application</title>
+    <link rel="stylesheet" th:href="@{/addBook_styles.css}"/>
+</head>
+<body>
+<h1 id="addBook">Zaktualizuj książkę</h1>
+
+<form method="POST" th:action="@{/update/} + ${book_id}" th:object="${book}">
+
+    <div id="grid">
+
+		<span class="validationError"
+              th:if="${#fields.hasErrors('title')}"
+              th:errors="*{title}">Błąd tytułu</span>
+        <br/>
+        <div class="book-input">
+            <div class="input-label">
+                <label for="title">Tytuł: </label>
+            </div>
+            <div class="input">
+                <input id="title" name="title" type="text" th:field="*{title}" th:text="${title}"/>
+            </div>
+        </div>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('author')}"
+              th:errors="*{author}">Błąd autora</span>
+        <br/>
+        <div class="book-input">
+            <div class="input-label">
+                <label for="author">Autor: </label>
+            </div>
+            <div class="input">
+                <input id="author" name="author" type="text" th:field="*{author}" th:text="${author}"/>
+            </div>
+        </div>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('release_date')}"
+              th:errors="*{release_date}">Błąd daty</span>
+        <br/>
+        <div class="book-input">
+            <div class="input-label">
+                <label for="release_date">Data wydania: </label>
+            </div>
+            <div class="input">
+                <input id="release_date" name="release_date" type="text" th:field="*{release_date}" th:text="${release_date}"/>
+            </div>
+        </div>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('description')}"
+              th:errors="*{description}">Błąd opisu</span>
+        <br/>
+        <div class="book-input">
+            <div class="input-label">
+                <label for="description">Opis: </label>
+            </div>
+            <div class="input">
+                <textarea id="description" name="description" rows="10" cols="39" th:field="*{description}" th:text="${description}"></textarea>
+            </div>
+        </div>
+        <div class="submit-button">
+            <input type="submit" value="Zaktualizuj"/>
+        </div>
+
+    </div>
+
+
+</form>
+
+
+</body>
+</html>
