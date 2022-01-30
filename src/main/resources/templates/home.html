@@ -2,9 +2,22 @@
 <html>
 <head>
     <title>BookShop Application</title>
-    <link rel="stylesheet" th:href="@{/addBook_styles.css}"/>
+    <link rel="stylesheet" th:href="@{/home_styles.css}"/>
 </head>
 <body>
-<h1 id="addBook">Strona główna</h1>
+<h1 id="mainPage">Strona główna</h1>
+
+<div id="grid">
+    <div class="book" th:each="book: ${books}">
+        <div class="book-cover">
+            <img src="">
+        </div>
+        <div class="book-title" th:text="${book.title}">Tytuł</div>
+        <div class="book-author" th:text="${book.author}">Autor</div>
+        <div class="book-release-date" th:text="${book.release_date}">Data wydania</div>
+        <div class="book-description" th:text="${book.description}">Opis</div>
+    </div>
+</div>
+
 </body>
 </html>

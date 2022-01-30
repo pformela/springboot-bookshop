@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body {
+  font-family: 'Playfair Display', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mainPage {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#grid {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 70%;
+}
+
+#grid .book {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.7fr 0.7fr 3fr;
+      grid-template-columns: 1fr 0.7fr 0.7fr 3fr;
+  -ms-grid-rows: 0.8fr 0.5fr 3fr;
+      grid-template-rows: 0.8fr 0.5fr 3fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#grid .book .book-cover {
+  background-color: lightcyan;
+  margin-right: 20px;
+  height: 260px;
+  width: 180px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1 / 4 / 1;
+}
+
+#grid .book .book-cover img {
+  height: 260px;
+  background-color: lightcyan;
+}
+
+#grid .book .book-title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 2 / 1 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: top;
+      align-self: top;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 0;
+}
+
+#grid .book .book-author {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 2 / 3 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 20px;
+}
+
+#grid .book .book-release-date {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 4 / 3 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 20px;
+}
+
+#grid .book .book-description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 3 / 2 / 3 / 6;
+}
+/*# sourceMappingURL=home_styles.css.map */
