@@ -47,6 +47,13 @@ public class UpdateBookController {
         return "updateBook";
     }
 
+    @GetMapping("/delete/{id}")
+    public String deleteBook(@PathVariable("id") long book_id) {
+        bookRepo.deleteById(book_id);
+
+        return "redirect:/update";
+    }
+
     @PostMapping("/{id}")
     public String updateBook(@Valid @ModelAttribute("book") Book book,
                              @PathVariable("id") long book_id,
