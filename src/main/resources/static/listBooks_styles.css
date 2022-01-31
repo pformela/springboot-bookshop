@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+body {
+  font-family: 'Playfair Display', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#addBook {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+#list-of-books {
+  width: 800px;
+}
+
+#list-of-books ol {
+  width: 100%;
+  counter-reset: section;
+}
+
+#list-of-books ol li::before {
+  counter-increment: section;
+  /* Increment the value of section counter by 1 */
+  content: counter(section) ".  ";
+  font-size: 20px;
+  width: 20px;
+}
+
+#list-of-books ol li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.05fr 2fr 1fr;
+      grid-template-columns: 0.05fr 2fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  grid-gap: 12px;
+  margin-bottom: 12px;
+}
+
+#list-of-books ol li a {
+  color: #3f3f3f;
+}
+/*# sourceMappingURL=listBooks_styles.css.map */

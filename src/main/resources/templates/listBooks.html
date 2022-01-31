@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BookShop Application</title>
+    <link rel="stylesheet" href="listBooks_styles.css"/>
+</head>
+<body>
+<h1 id="mainPage">Wybierz książkę do zaktualizowania</h1>
+
+    <div id="list-of-books">
+        <ol class="books">
+            <li class="book" th:each="book: ${book_list}">
+                <a th:href="@{/update/{id}(id=${book.id})}"><div class="title" th:text="${book.title}"></div></a>
+                <div class="author"th:text="${book.author}"></div>
+            </li>
+        </ol>
+    </div>
+
+</body>
+</html>

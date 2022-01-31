@@ -11,6 +11,8 @@ import pl.bookshop.data.BookRepository;
 
 import javax.persistence.Query;
 import javax.validation.Valid;
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @Controller
@@ -22,6 +24,16 @@ public class UpdateBookController {
     @Autowired
     public UpdateBookController(BookRepository bookRepo) {
         this.bookRepo = bookRepo;
+    }
+
+    @GetMapping
+    public String listAllBooks(Model model) {
+        List<Book> bookList = new ArrayList<>();
+
+        bookRepo.findAll().forEach(i -> bookList.add(i));
+        model.addAttribute("book_list", bookList);
+
+        return "listBooks";
     }
 
     @GetMapping("/{id}")
