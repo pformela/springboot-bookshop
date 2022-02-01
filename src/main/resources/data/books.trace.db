@@ -300,3 +300,427 @@ call next value for hibernate_sequence [90036-200]
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:35:58 jdbc[3]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:41:44 jdbc[4]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:41:44 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    E_MAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    e_mail varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:41:44 jdbc[5]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:42:19 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    E_MAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    e_mail varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:42:20 jdbc[6]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:42:39 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    E_MAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    e_mail varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:42:39 jdbc[7]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:43:26 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    E_MAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    e_mail varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:43:26 jdbc[8]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:44:26 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    E_MAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    e_mail varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:44:26 jdbc[9]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:45:01 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    EMAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    email varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:45:01 jdbc[10]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:52:29 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER[*]
+(
+    ID BIGINT AUTO_INCREMENT PRIMARY KEY,
+    NAME VARCHAR(30),
+    SURNAME VARCHAR(30),
+    TELEPHONE VARCHAR(12),
+    EMAIL VARCHAR(30),
+    STREET VARCHAR(30),
+    CITY VARCHAR(30),
+    POSTAL_CODE VARCHAR(6)
+)"; expected "identifier"; SQL statement:
+create table if not exists Order
+(
+    id bigint auto_increment primary key,
+    name varchar(30),
+    surname varchar(30),
+    telephone varchar(12),
+    email varchar(30),
+    street varchar(30),
+    city varchar(30),
+    postal_code varchar(6)
+) [42001-200]
+2022-02-01 19:52:29 jdbc[11]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:53:49 jdbc[12]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:54:19 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ORDER_BOOKS
+(
+    ORDER_ID BIGINT REFERENCES ORDERS(ID),
+    BOOK_ID BIGINT REFERENCES BOOKS(ID),
+)[*]"; expected "identifier"; SQL statement:
+create table if not exists Order_Books
+(
+    order_id bigint references Orders(id),
+    book_id bigint references Books(id),
+) [42001-200]
+2022-02-01 19:54:19 jdbc[13]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2022-02-01 19:54:28 jdbc[14]: exception
+java.sql.SQLClientInfoException: Client info name 'ApplicationName' not supported.
+	at org.h2.jdbc.JdbcConnection.setClientInfo(JdbcConnection.java:1749)
+	at com.intellij.database.remote.jdbc.impl.RemoteConnectionImpl.setClientInfo(RemoteConnectionImpl.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:562)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:796)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:677)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:676)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)

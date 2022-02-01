@@ -2,12 +2,10 @@ package pl.bookshop;
 
 import lombok.*;
 import org.hibernate.Hibernate;
-import org.springframework.data.jpa.repository.Modifying;
 
 import javax.persistence.*;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
-import java.util.Date;
 import java.util.Objects;
 
 @Getter
@@ -19,7 +17,7 @@ import java.util.Objects;
 public class Book {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     @Size(min=4, max=120, message="Pole tytuł powinno mieć długość od 4 do 120 znaków")
     private String title;
